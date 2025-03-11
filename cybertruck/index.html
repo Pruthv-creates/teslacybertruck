@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Background Cybertruck Viewer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.128.0/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+<body>
+    <section class="model-section" id="cybertruck-section">
+        <div class="model-container" id="cybermodel-container">
+            <div class="loading-indicator">Loading Model...</div>
+        </div>
+        <div class="model-controls">
+            <button class="control-btn" id="reset-view">Reset View</button>
+            <button class="control-btn" id="toggle-rotation">⏯️ Auto Rotate</button>
+        </div>
+    </section>
+
+    <script type="module" src="js/cybermodel.js"></script>
+</body>
+</html>
